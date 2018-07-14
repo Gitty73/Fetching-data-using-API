@@ -1,0 +1,45 @@
+<h1>Your Movies List Is Here!!!</h1>
+<button><a href="/">Search Again</a></button>
+
+<% data["Search"].forEach(function(movie){ %>
+<div><ul><li><strong><%= movie["Title"] %> - </strong><span><%= movie["Year"] %></span></li></ul><span><img src="<%= movie["Poster"] %>" alt="poster image"></span></div>
+<% }); %>
+<button><a href="/">Search Again</a></button>
+<style>
+    body{
+        background: lightgrey;
+        margin: 50px auto;
+    }
+    
+    div{
+        background: skyblue;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    
+    li{
+        margin-left:500px;
+        line-height:30px;
+        height:30px;
+    }
+    
+    span{
+        color: darkslategray;
+    }
+    
+    button{
+        background: lightseagreen;
+        color: white;
+    }
+    
+    img{
+        margin-left:550px;
+        width:150px;
+        height:150px;
+    }
+    
+</style>
+
+
